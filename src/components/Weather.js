@@ -24,23 +24,23 @@ const Weather = () => {
 
     if (tempMood == "Clear") {
         mood =
-            <i className='fas fa-sun' style={{color : "#eccc68"}}></i>
+            <i className='fas fa-sun' style={{ color: "#eccc68" }}></i>
     } else if (tempMood == "Clouds") {
         mood =
-            <i className='fas fa-cloud' style={{color : "#f1f2f6"}}></i>
+            <i className='fas fa-cloud' style={{ color: "#f1f2f6" }}></i>
     } else if (tempMood == "Rain") {
         mood =
-            <i className='fas fa-cloud-rain' style={{color : "#a4b0be"}}></i>
+            <i className='fas fa-cloud-rain' style={{ color: "#a4b0be" }}></i>
     } else {
         mood =
-            <i className='fas fa-sun' style={{color : "#eccc68"}}></i>
+            <i className='fas fa-sun' style={{ color: "#eccc68" }}></i>
     }
     return (
         <div className="container">
-        <h3 style={{textAlign:"center", margin:"50px"}}>Live Weather App</h3>
+            <h3 style={{ textAlign: "center", margin: "50px" }}>Live Weather App</h3>
             <div className="box">
                 <div className='input'>
-                    <input type="search" className='inputField' onChange={(event) => { setSearch(event.target.value) }} value={search}/>
+                    <input type="search" className='inputField' onChange={(event) => { setSearch(event.target.value) }} value={search} />
                 </div>
                 {
                     !city ? (
@@ -53,11 +53,10 @@ const Weather = () => {
                                 </h3>
                                 <h4>{city.temp} °C</h4>
                                 <p>{city.temp_max} max | {city.temp_min} min</p>
-                                <h4 style={{fontSize:"80px"}}>{mood}</h4>
+                                <h4 style={{ fontSize: "80px" }}>{mood}</h4>
                             </div>
                         )
                 }
-
             </div>
         </div>
     )

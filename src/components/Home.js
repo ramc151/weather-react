@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import image from './png.jpg'
+import './style.css'
 
 const Home = () => {
     return (
@@ -11,7 +12,7 @@ const Home = () => {
                     <Link to="/weather" className='btn btn-primary'>Search Now</Link>
                 </div>
                 <div className="col-md-6">
-                    <img src={image} alt="loading" style={{ height: "600px" }} />
+                    <img src={image} className='frontimage' alt="loading" />
                 </div>
             </div>
         </div>

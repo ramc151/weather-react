@@ -7,6 +7,9 @@
     margin: auto;
     margin-top: 70px;
 }
+.d-flex img{
+    height: 600px;
+}
 .input{
     text-align: center;
     margin: 20px;
@@ -14,4 +17,13 @@
 input[type="search"]{
     text-align: center;
     text-transform: capitalize;
+}
+@media (max-width : 640px) {
+    .d-flex{
+        flex-direction: column;
+    }
+    .d-flex img{
+        height: 330px;
+        width: 100%;
+    }
 }
